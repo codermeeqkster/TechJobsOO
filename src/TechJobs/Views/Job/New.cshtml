@@ -11,8 +11,24 @@
         <label asp-for="EmployerID"></label>
         <select asp-for="EmployerID" asp-items="Model.Employers"></select>
     </div>
+    <div class="form-group">
+        <label asp-for="LocationID"></label>
+        <select asp-for="LocationID" asp-items="Model.Locations"></select>
+        <span asp-validation-for="LocationID"></span><br />
+    </div>
+    <div class="form-group">
+        <label asp-for="CoreCompetencyID"></label>
+        <select asp-for="CoreCompetencyID" asp-items="Model.CoreCompetencies"></select>
+        <span asp-validation-for="CoreCompetencyID"></span><br />
+    </div>
+    <div class="form-group">
+        <label asp-for="PositionTypeID"></label>
+        <select asp-for="PositionTypeID" asp-items="Model.PositionTypes"></select>
+        <span asp-validation-for="PositionTypeID"></span><br />
+    </div>
 
-    @{ 
+
+    @{
         // TODO #5 - Create <select> dropdowns for other job fields (outside of this @{ } block)
     }
 
